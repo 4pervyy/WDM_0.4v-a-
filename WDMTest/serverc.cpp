@@ -17,7 +17,7 @@ void ServerC::startServer(qint16 port)
     }
 }
 
-void ServerC::incomingConnection(int socketDescriptor) // подключение
+void ServerC::incomingConnection(qintptr socketDescriptor) // подключение
 {
     ssocket = new QTcpSocket(this);
     ssocket->setSocketDescriptor(socketDescriptor);
