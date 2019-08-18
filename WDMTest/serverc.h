@@ -28,7 +28,7 @@ public:
 
 public slots:
     void startServer(qint16 port);
-    void incomingConnection(int socketDescriptor);
+    void incomingConnection(qintptr socketDescriptor);
     void sockReady();
     void sockDisc();
     void stopServer();
